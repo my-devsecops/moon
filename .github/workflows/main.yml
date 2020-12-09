@@ -36,7 +36,7 @@ jobs:
       - name: Test with Checkov
         run: |
           pip install checkov
-          checkov -d . -o json > results.json
+          checkov -d .
       
       # Upload IaC Checkov test results
       - name: Upload Checkov test results
