@@ -36,4 +36,4 @@ jobs:
       - name: Test with Checkov
         run: |
           pip install checkov
-          checkov -d .
+          checkov -d . -o json > result.json
