@@ -36,8 +36,12 @@ jobs:
       - name: Test with Checkov
         run: |
           pip install checkov
-          checkov -d . -o json > result.json
+          checkov -d . -o json > results.json
 
+      # Echo a start message
+      - name: Parse the results file
+        run: cat ./results.json
+        
       # Upload IaC Checkov test results
       - uses: actions/upload-artifact@v2
         with:
