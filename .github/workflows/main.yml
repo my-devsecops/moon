@@ -26,7 +26,7 @@ jobs:
       - name: Set up Python $
         uses: actions/setup-python@v1
         with:
-          python-version: $
+          python-version: ${{ matrix.python-version }}
       
       # Echo a start message
       - name: Echo a start message
