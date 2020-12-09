@@ -43,5 +43,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: checkov-test-results
-          path: results.jsonl
-          if: ${{ always() }}
+          path: results.json
