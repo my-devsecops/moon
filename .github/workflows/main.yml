@@ -47,4 +47,5 @@ jobs:
         with:
           name: checkov-test-results
           path: .
+          if: always() 
           if-no-files-found: error # 'warn' or 'ignore' are also available, defaults to `warn`
