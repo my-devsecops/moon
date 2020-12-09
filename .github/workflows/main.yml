@@ -37,10 +37,3 @@ jobs:
         run: |
           pip install checkov
           checkov -d .
-      
-      # Upload IaC Checkov test results
-      - name: Upload Checkov test results
-        uses: actions/upload-artifact@v2
-        with:
-          name: checkov-test-results
-          path: results.json
